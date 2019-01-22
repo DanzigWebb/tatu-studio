@@ -9,3 +9,39 @@
   justify-content: space-between
 .header-logo
   margin-top: 15px
+
+///////////////////////////////////////////
+// Мменю
+///////////////////////////////////////////
+.mm-navbar a, .mm-navbar a:hover
+  position: relative
+  top: -30px
+.site-body
+  .mm-menu_theme-dark 
+    .mm-navbar
+      margin-top: 60px
+.site-body
+  .mm-panels>.mm-panel>.mm-navbar+.mm-listview
+    margin-top: 40px
+.site-body
+  .mm-listitem
+    font-weight: 700
+    color: #fff
+    text-transform: uppercase
+    font-size: 15px
+.site-body
+  .mm-listitem__text
+    transition: 0.3s
+.site-body
+  .mm-listitem__text:hover
+    background-color: $accent
+
+#my-menu
+  .fab, .fas, .fa
+    font-size: 22px
+    transition: 0.3s
+  .fa-whatsapp
+    font-size: 25px
+#my-menu
+  .fab:hover, .fas:hover, .fa:hover
+    color: $accent

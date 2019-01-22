@@ -1,3 +1,8 @@
+
+///////////////////////////////////////////
+// Главная секция
+///////////////////////////////////////////
+
 .site-mainscreen
   min-height: 100vh
   background-image: url(https://livedemo00.template-help.com/wt_prod-16368/images/slide-5-1-1920x880.jpg)
@@ -91,3 +96,101 @@
     flex-wrap: wrap
   .mainscr-cont-content
     max-width: 200px
+
+///////////////////////////////////////////
+// Cекция галерея
+///////////////////////////////////////////
+
+.container-ourgallery
+  display: flex
+  justify-content: flex-start
+  padding-top: 120px
+  flex-wrap: wrap
+.ourgallery-gallery
+  position: relative
+  width: 50%
+.ourgallery__hr
+  width: 46px
+  height: 1px
+  background-color: $accent
+  border: none
+  
+.ourgallery-img
+  display: flex
+  padding-right: 60px
+  flex-wrap: wrap
+.ourgallery__slide
+  margin: 5px
+.ourgallery-rotatetxt
+  transform: rotate(-90deg)
+  position: absolute
+  right: -60px
+  top: 200px
+  font-weight: 800
+  text-transform: uppercase
+  color: $darker
+  letter-spacing: 2px
+.ourgallery-rotatetxt__text
+  font-size: 18px
+.ourgallery-text
+  width: 35%
+.ourgallery-heading
+  position: relative
+.ourgallery__par--darker
+  color: $darker
+.ourgallery-text__sub
+  position: absolute
+  right: 0
+  padding: 10px
+  
+@media (max-width: 1000px)
+  .ourgallery-gallery
+    width: 37%
+  .ourgallery-text
+    width: 60%
+    padding-left: 5px
+    margin-top: 20px
+  .container-ourgallery
+    padding-top: 60px
+  .ourgallery__hr
+    margin-left: 7px
+@media (max-width: 750px)
+  .ourgallery-img
+    padding-right: 0
+    padding-left: 0
+  .ourgallery-gallery
+    margin-right: 20px
+  .ourgallery-text
+    width: 50%
+  .ourgallery-rotatetxt
+    transform: rotate(0deg)
+    position: relative
+    top: 0
+    right: 0
+    margin: auto
+   
+@media (max-width: 640px)
+  .container-ourgallery
+    justify-content: center
+  .ourgallery-text__title
+    font-size: 38px
+    margin-top: 0
+  .ourgallery__hr
+    margin: auto
+    position: relative
+    top: -40px
+@media (max-width: 525px)
+  .container-ourgallery
+    flex-direction: column
+    justify-content: center
+  .ourgallery-text
+    width: 99%
+  .ourgallery-gallery
+    width: 99%
+  .ourgallery__slide
+    max-width: 270px
+    margin: auto
+
+
+.whatwedo
+  padding-top: 120px
