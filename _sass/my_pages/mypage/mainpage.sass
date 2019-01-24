@@ -192,5 +192,134 @@
     margin: auto
 
 
+///////////////////////////////////////////
+// Услуги
+///////////////////////////////////////////
+
 .whatwedo
-  padding-top: 120px
+  padding-top: 60px
+.whatwedo-wrap
+  display: flex
+  justify-content: space-between
+  align-items: center
+.whatwedo-serv
+  display: flex
+  flex-wrap: wrap
+  
+.whatwedo-serv-item
+  width: 46%
+  margin: 5px
+.serv-item-heading
+  display: flex
+  align-items: center
+  margin-bottom: 10px
+.serv-item__icon
+  fill: $accent
+  margin-right: 30px
+.serv-item__title
+  font-weight: 700
+  text-decoration: none
+  color: #fff
+  transition: 0.3s
+.serv-item__title:hover
+  color: $accent
+.serv-item__text
+  color: $darker
+  
+  
+@media (max-width: 970px)
+  .whatwedo-right__pic
+    display: none
+@media (max-width: 535px)
+  .whatwedo-serv-item
+    width: 100%
+  .serv-item__icon
+    width: 40px
+
+///////////////////////////////////////////
+// Персонал
+///////////////////////////////////////////
+
+.staff-heading
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+.staff-item
+  position: relative
+  margin: 5px
+.staff-item-content
+  position: absolute
+  background: #1d1d1d
+  bottom: 0
+  left: 0
+  right: 0
+  text-align: center
+  padding: 25px 15px
+  box-shadow: 0 3px 0 0 #f13f3f
+  margin-bottom: -10px
+  overflow: hidden
+  transition: all 0.7s
+.staff-item-content__name
+  color: #fff
+  text-decoration: none
+  transition: all 0.4s
+.staff-item-content__name:hover
+  color: $accent
+.staff-item-content__post
+  margin-top: 10px
+.staff-item:hover
+  .staff-item-content
+    margin-bottom: 0
+    transition: all 0.7s
+    .staff-item-content-socmenu
+      opacity: 1
+      margin-bottom: 0
+.staff-item-content-socmenu
+  margin-bottom: -30px
+  opacity: 0
+  transition: all 0.7s
+  .fab
+    color: $accent
+    transition: all .7s
+    margin-left: 4px
+    margin-right: 4px
+    font-size: 18px
+  .fab:hover
+    color: #e22b2b
+    
+
+.staff-carousel
+  .owl-dots
+    margin-top: 50px
+
+@media (max-width: 1000px)
+  .staff
+    margin-bottom: 60px
+@media (max-width: 818px)
+  .staff-heading
+    margin-bottom: 20px
+    
+///////////////////////////////////////////
+// Персонал
+///////////////////////////////////////////
+.testimonials-carousel
+  margin-top: 60px
+.testimonials-item__icon
+  fill: $darker
+  opacity: 0.1
+  margin-bottom: 20px
+.testimonials-item__text
+  line-height: 1.6
+  opacity: 0.7
+.testimonials-human
+  display: flex
+.owl-carousel 
+  .owl-item
+    .testimonials-human__avatar
+      width: 90px
+      height: 90px
+      border-radius: 50%
+      margin-right: 20px
+.testimonials-human__footer
+  opacity: 0.4

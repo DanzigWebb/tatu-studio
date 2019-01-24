@@ -15,6 +15,7 @@
   font-weight: 700
 .title-third
   font-size: 21px
+  font-weight: 700
 .line-heading
   margin-left: 28px
 .line-heading:before
@@ -45,7 +46,7 @@ header
       background-color: $accent
 
 .site-section
-  margin-bottom: 20px
+  margin-bottom: 40px
 
 header:before
   content: ''
@@ -57,13 +58,15 @@ header:before
 ///////////////////////////////////////////
 // Карусель
 ///////////////////////////////////////////
+
 .site-section
-  .owl-theme 
+  .owl-theme
     .owl-dots
-      .owl-dot.active 
+      .owl-dot.active
         span
           background: $accent
-.owl-theme .owl-nav
+
+.owl-nav
   position: relative
   .owl-next
     position: absolute
@@ -73,9 +76,6 @@ header:before
     position: absolute
     left: 0
     top: 8px
-
-@media (max-width: 525px)
-  .owl-theme .owl-nav
-    .fas
-      font-size: 80px
-    
+  .fas
+    font-size: 80px
+     

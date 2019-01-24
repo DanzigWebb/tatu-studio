@@ -36,7 +36,7 @@ $(document).ready(function() {
 
 
 $(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
+    $('.gallery-carousel').owlCarousel({
         loop:false,
         margin:10,
         responsiveClass:true,
@@ -55,5 +55,45 @@ $(document).ready(function(){
                 loop:false
             }
         }
-    })
+    });
+    $('.staff-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true
+            },
+            500:{
+                items:2,
+                nav:true
+            },
+            1000:{
+                items:3,
+                nav:false,
+                loop:false
+            }
+        }
+    });
+    $('.testimonials-carousel').owlCarousel({
+        loop:true,
+        margin:120,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:false
+            },
+            500:{
+                items:1,
+                nav:false
+            },
+            1000:{
+                items:2,
+                nav:false,
+                loop:false
+            }
+        }
+    });
     });
