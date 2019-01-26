@@ -43,16 +43,19 @@ $(document).ready(function(){
         responsive:{
             0:{
                 items:1,
-                nav:true
+                nav:true,
+                loop:true
             },
             600:{
                 items:2,
+                dots:false,
                 nav:false
             },
             1000:{
                 items:3,
                 nav:false,
-                loop:false
+                dots:false,
+                loop:true
             }
         }
     });
