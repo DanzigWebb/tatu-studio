@@ -301,8 +301,9 @@
     margin-bottom: 20px
     
 ///////////////////////////////////////////
-// Персонал
+// Отзывы
 ///////////////////////////////////////////
+
 .testimonials-carousel
   margin-top: 60px
 .testimonials-item__icon
@@ -323,3 +324,54 @@
       margin-right: 20px
 .testimonials-human__footer
   opacity: 0.4
+
+///////////////////////////////////////////
+// Форма
+///////////////////////////////////////////
+.connect
+  margin-bottom: 0
+.connection-wrap
+  display: flex
+  justify-content: space-between
+  align-items: center
+.connect__pic
+  margin-right: 80px
+.connect-form
+  display: flex
+  flex-direction: column
+  margin-bottom: 40px
+.connect-form__input
+  margin: 5px
+  width: 60%
+  height: 40px
+  margin-left: 0
+  background: none
+  border: 1px solid $accent
+  border-radius: 2px
+  color: $darker
+  font-family: 'Montserrat', sans-serif
+  font-weight: 500
+  padding-left: 20px
+  font-size: 15px
+.connect-form__message
+  height: 120px
+  margin-top: 20px
+  min-height: 40px
+  max-width: 60%
+.connect-form__btn
+  background: none
+  border: none
+
+@media (max-width: 1180px)
+  .connect__pic
+    margin-right: 0
+@media (max-width: 1080px)
+  .connect-form__input
+    width: 90%
+  .connect-form__message
+    max-width: 90%
+@media (max-width: 975px)
+  .connect__pic
+    display: none
+  .connect-form
+    width: 80%

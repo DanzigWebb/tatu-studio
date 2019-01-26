@@ -1,0 +1,44 @@
+.site-footer-wrap
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 100px
+.footer-logo
+  padding-right: 40px
+.footer-menu
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  width: 60%
+.footer-menu__link
+  color: #fff
+  transition: 0.3s
+  margin-right: 10px
+.footer-menu__link:hover
+  color: $accent
+
+.footer-develop__content
+  text-align: center
+  color: $darker
+.webrunn-link
+  color: #fff
+  font-weight: 600
+  transition: 0.3s
+
+
+@media (max-width: 725px)
+  .site-footer
+    padding-top: 40px
+  .site-footer-wrap
+    flex-direction: column
+  .footer-menu
+    width: 100%
+@media (max-width: 550px)
+  .footer-menu__link  
+    width: 32%
+    margin: 5px
+  .footer-menu
+    justify-content: center
+    padding-top: 20px
+  .site-footer-wrap
+    height: 150px

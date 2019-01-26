@@ -17,7 +17,7 @@
       </div>
       <div class="mainscr-cont-content">
         <p class="mainscr-cont__text">Наш адрес:</p>
-        <a href="tel:#" class="mainscr-cont__link">Спб, Невский пр. 23</a>
+        <a href="#/" class="mainscr-cont__link">Спб, Невский пр. 23</a>
       </div>
     </div>
   </div>
@@ -242,3 +242,42 @@
     </div>
   </div>
 </section> 
+
+<!-- Форма -->
+
+<section class="connect site-section">
+    <div class="container connection-wrap">
+      <img src="https://livedemo00.template-help.com/wt_prod-16368/images/home-5-5-596x893.png" alt="" class="connect__pic">
+      <div class="connect-right">
+        <div class="connect-heading">
+          <h2 class="title-second line-heading connect-heading__title">Напишите нам</h2>
+          <p class="connect-heading__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni eius dolorem, modi facilis minus quo.</p>
+        </div>
+        <form action="" class="connect-form">
+          <div class="connect-form-name" >
+            <input type="text" id="form-name" value="Ваше имя" 
+                   class="connect-form__name connect-form__input" 
+                   onfocus="if(this.value == 'Ваше имя') this.value = '' "
+                   onblur="if(this.value.length == 0) this.value = 'Ваше имя'">
+          </div>
+          <div class="connect-form-name">
+            <input type="text" value="Ваш email" 
+                   class="connect-form__email connect-form__input"
+                   onfocus="if(this.value == 'Ваш email') this.value = '' "
+                   onblur="if(this.value.length == 0) this.value = 'Ваш email'">
+          </div>
+          <div class="connect-form-name">
+            <input type="text" value="Ваш телефон" 
+                   class="connect-form__phone connect-form__input"
+                   onfocus="if(this.value == 'Ваш телефон') this.value = '' "
+                   onblur="if(this.value.length == 0) this.value = 'Ваш телефон'">
+          </div>
+          <textarea type="text" 
+                    class="connect-form__message connect-form__input"
+                    onfocus="if(this.value == 'Ваше сообщение') this.value = '' "
+                    onblur="if(this.value.length == 0) this.value = 'Ваше сообщение'">Ваше сообщение</textarea>
+        </form>
+        <button class="main-btn connect-form__btn">Отправить</button>
+      </div>
+    </div>
+  </section>
