@@ -38,7 +38,7 @@ $(document).ready(function() {
 $(document).ready(function(){
     $('.gallery-carousel').owlCarousel({
         loop:false,
-        margin:10,
+        margin:0,
         responsiveClass:true,
         responsive:{
             0:{
@@ -46,12 +46,12 @@ $(document).ready(function(){
                 nav:true
             },
             600:{
-                items:1,
+                items:2,
                 nav:false
             },
             1000:{
-                items:2,
-                nav:true,
+                items:3,
+                nav:false,
                 loop:false
             }
         }
@@ -96,4 +96,5 @@ $(document).ready(function(){
             }
         }
     });
+
     });

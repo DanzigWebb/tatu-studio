@@ -101,27 +101,25 @@
 // Cекция галерея
 ///////////////////////////////////////////
 
-.container-ourgallery
+.about-wrap
   display: flex
-  justify-content: flex-start
-  padding-top: 120px
+  justify-content: center
   flex-wrap: wrap
-.ourgallery-gallery
+.about-gallery
   position: relative
-  width: 50%
-.ourgallery__hr
+.about__hr
   width: 46px
   height: 1px
   background-color: $accent
   border: none
   
-.ourgallery-img
+.about-img
   display: flex
-  padding-right: 60px
-  flex-wrap: wrap
-.ourgallery__slide
+  padding-right: 50px
+  width: 40%
+.about__slide
   margin: 5px
-.ourgallery-rotatetxt
+.about-rotatetxt
   transform: rotate(-90deg)
   position: absolute
   right: -60px
@@ -130,67 +128,38 @@
   text-transform: uppercase
   color: $darker
   letter-spacing: 2px
-.ourgallery-rotatetxt__text
+.about-rotatetxt__text
   font-size: 18px
-.ourgallery-text
+.about-text
   width: 35%
-.ourgallery-heading
+.about-heading
   position: relative
-.ourgallery__par--darker
+.about__par--darker
   color: $darker
-.ourgallery-text__sub
+.about-text__sub
   position: absolute
   right: 0
   padding: 10px
   
-@media (max-width: 1000px)
-  .ourgallery-gallery
-    width: 37%
-  .ourgallery-text
-    width: 60%
-    padding-left: 5px
-    margin-top: 20px
-  .container-ourgallery
-    padding-top: 60px
-  .ourgallery__hr
-    margin-left: 7px
-@media (max-width: 750px)
-  .ourgallery-img
-    padding-right: 0
-    padding-left: 0
-  .ourgallery-gallery
-    margin-right: 20px
-  .ourgallery-text
-    width: 50%
-  .ourgallery-rotatetxt
-    transform: rotate(0deg)
-    position: relative
-    top: 0
-    right: 0
-    margin: auto
-   
-@media (max-width: 640px)
-  .container-ourgallery
-    justify-content: center
-  .ourgallery-text__title
-    font-size: 38px
-    margin-top: 0
-  .ourgallery__hr
-    margin: auto
-    position: relative
-    top: -40px
-@media (max-width: 525px)
-  .container-ourgallery
-    flex-direction: column
-    justify-content: center
-  .ourgallery-text
-    width: 99%
-  .ourgallery-gallery
-    width: 99%
-  .ourgallery__slide
-    max-width: 270px
-    margin: auto
 
+@media (max-width: 970px)
+  .about-wrap
+    flex-direction: column
+  .about-img
+    justify-content: center
+    width: 100%
+    position: relative
+    padding-right: 0
+  .about-rotatetxt
+    display: none
+  .about-text
+    width: 90%
+  
+@media (max-width: 570px)
+  .about-img
+    display: none
+  .about__hr
+    display: none
 
 ///////////////////////////////////////////
 // Услуги
@@ -375,3 +344,20 @@
     display: none
   .connect-form
     width: 80%
+
+///////////////////////////////////////////
+// Галерея
+///////////////////////////////////////////
+
+.gallery-heading
+  display: flex
+  justify-content: space-between
+  align-items: center
+.gallery-heading__link
+  color: #fff
+  transition: 0.3s
+  padding-top: 10px
+  font-weight: 500
+  font-size: 18px
+.gallery-heading__link:hover
+  color: $accent
